@@ -1,0 +1,32 @@
+.main-index{
+    background-color: blueviolet;
+    text-align: center;
+    min-height: 500vh;
+    display: flex;
+    flex-direction: column;
+    .card{
+        max-width: 350px;
+        margin: 0 auto;
+        h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            &:hover{
+                color: green;
+                background-color: rgba(255, 228, 196, 0.363);
+            }
+        }
+              
+    }
+}
+
+@media (min-width:550px){
+    .main-index{
+        flex-direction: row;
+        .card{
+            h2{
+                &:hover{
+                    background-color: rgb(33, 158, 231);
+                }
+            }
+        }
+    }
+}

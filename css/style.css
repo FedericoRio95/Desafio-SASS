@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main-index {
+  background-color: blueviolet;
+  text-align: center;
+  min-height: 500vh;
+  display: flex;
+  flex-direction: column; }
+  .main-index .card {
+    max-width: 350px;
+    margin: 0 auto; }
+    .main-index .card h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .main-index .card h2:hover {
+        color: green;
+        background-color: rgba(255, 228, 196, 0.363); }
+
+@media (min-width: 550px) {
+  .main-index {
+    flex-direction: row; }
+    .main-index .card h2:hover {
+      background-color: #219ee7; } }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+  height: 30vh; }
+  header li {
+    list-style: none;
+    text-align: center; }
+
+footer {
+  background-color: aqua; }
+  footer form input {
+    padding: 15px; }
+    footer form input:focus {
+      background-color: yellow; }
+    footer form input::placeholder {
+      color: #c909af; }
